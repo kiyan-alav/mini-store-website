@@ -1,0 +1,62 @@
+@import "./reset.css";
+
+@font-face {
+  font-family: "Lalezar";
+  src: url(./../public/fonts/Lalezar-Regular.ttf);
+}
+
+:root {
+  --ff-primary: "Lalezar";
+  --transition: all 0.2s linear;
+  --clr-primary: #ff8906;
+  --clr-secondary: #f25f4c;
+  --clr-tertiary: #e53170;
+  --clr-light: #a7a9be;
+  --clr-dark: #0f0e17;
+  --clr-white: #fff;
+  --clr-grey: #102a42;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-grey);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}

@@ -1,0 +1,87 @@
+/*
+=============== 
+Website Description
+===============
+*/
+
+.about-center {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.about-center .title-center {
+  border-bottom: 1px solid var(--clr-light);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-center .title-center h3 {
+  font-size: 2rem;
+  transition: var(--transition);
+  cursor: pointer;
+  display: inline-block;
+  color: var(--clr-primary);
+}
+
+.about-center .title-center h3:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .about-center .about-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .about-center .about-infos .infos p {
+    max-width: 30rem;
+  }
+}
+
+.about-center .about-infos .infos {
+  margin-bottom: 1.5rem;
+}
+
+.about-center .about-infos .infos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-dark);
+}
+
+.about-center .about-infos .infos p {
+  font-size: 1.12rem;
+  text-align: justify;
+  margin-bottom: 0.25rem;
+  /* max-width: 30rem; */
+}
+
+.about-center .about-infos .infos ul {
+  padding: 1rem;
+  list-style-type: square;
+  font-size: 1.2rem;
+}
+
+.about-center .about-infos .infos button {
+  background-color: var(--clr-primary);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.75rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-white);
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.about-center .about-infos .infos button:hover {
+  background-color: var(--clr-dark);
+}
+
+.about-center .about-infos .about-img {
+  max-width: 35rem;
+  margin: 0 auto;
+}

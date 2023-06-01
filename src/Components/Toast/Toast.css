@@ -1,0 +1,40 @@
+.toast {
+  background-color: #1e1e1e;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 20rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.toast .icon {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  position: relative;
+  left: -270px;
+  top: -10px;
+  cursor: pointer;
+}
+
+.toast p {
+  display: flex;
+  gap: 10px;
+}
+
+.toast p .check {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.toast p span {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+}

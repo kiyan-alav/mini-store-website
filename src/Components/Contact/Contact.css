@@ -1,0 +1,164 @@
+/*
+=============== 
+Message Box
+===============
+*/
+
+.contact-center {
+  margin-top: 4rem !important;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-center .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.contact-center .contact .message-box .form .form-input input,
+.contact-center .contact .message-box .form .form-input textarea {
+  display: block;
+  border: none;
+  border-bottom: 2px solid rgba(255, 137, 6, 0.5);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+  font-size: 1.2rem;
+  color: var(--clr-primary);
+  padding: 1rem;
+}
+
+.contact-center .contact .message-box .form .form-input input:focus,
+.contact-center .contact .message-box .form .form-input textarea:focus {
+  outline: none;
+  border-bottom-color: rgba(255, 137, 6, 1);
+  padding-right: 0.5rem;
+}
+
+.contact-center .contact .message-box .form .form-input input::placeholder,
+.contact-center .contact .message-box .form .form-input textarea::placeholder {
+  transition: var(--transition);
+  color: var(--clr-primary);
+}
+
+.contact-center
+  .contact
+  .message-box
+  .form
+  .form-input
+  input:focus::placeholder,
+.contact-center
+  .contact
+  .message-box
+  .form
+  .form-input
+  textarea:focus::placeholder {
+  padding-right: 0.5rem;
+}
+
+.contact-center .contact .message-box .form .submit-btn {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin: 0 auto;
+  background-color: unset;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  margin-top: 2rem;
+  transition: var(--transition);
+}
+
+.contact-center .contact .message-box .form .submit-btn:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  border-color: var(--clr-dark);
+}
+
+.contact-center .contact .message-info {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-center .contact .message-info h2 {
+  font-size: 1.75rem;
+  color: var(--clr-dark);
+}
+
+.contact-center .contact .message-info p {
+  font-size: 1.3rem;
+  color: var(--clr-dark);
+  text-align: justify;
+}
+
+.contact-center .message-box-btn {
+  display: block;
+  background-color: unset;
+  border: none;
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 2rem;
+}
+
+.contact-center .message-box-btn:hover {
+  transform: scale(1.2);
+}
+
+.contact-center .messages-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  display: none;
+  transition: var(--transition);
+}
+
+.contact-center .messages-con.show {
+  display: block;
+}
+
+.contact-center .messages-con .message {
+  border: 1px solid var(--clr-primary);
+  background-color: var(--clr-primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--clr-dark);
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-center .messages-con .message {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.contact-center .messages-con .message .message-title,
+.contact-center .messages-con .message .message-body,
+.contact-center .messages-con .message .message-date {
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-center .messages-con .message .message-body {
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-center .messages-con .message .message-body {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}

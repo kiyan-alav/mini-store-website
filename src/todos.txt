@@ -1,0 +1,1 @@
+Every thing is almost done except total price in shopping cart component

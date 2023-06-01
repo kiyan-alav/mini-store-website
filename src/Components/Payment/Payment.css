@@ -1,0 +1,65 @@
+.payment-section {
+  margin-top: 1.5rem !important;
+  padding: 1.5rem;
+}
+
+.payment-section .payment-title {
+  text-align: center;
+  color: var(--clr-dark);
+  font-size: 2.2rem;
+}
+
+.form-payment .form-input {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 768px;
+  margin: 1rem auto 0 auto;
+}
+
+.form-payment .form-input label {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.form-payment .form-input input {
+  border: 1px solid #cecece;
+  padding: 5px;
+  display: block;
+  width: 90%;
+  font-family: var(--ff-primary);
+}
+
+.form-payment .form-input input:focus {
+  outline: none;
+}
+
+.form-payment .form-input .cart-number-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-payment .payment-btn {
+  display: block;
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
+  transition: var(--transition);
+  padding: 0.75rem 1.5rem;
+  background-color: unset;
+  cursor: pointer;
+  width: 10rem;
+  margin: 1.5rem auto 0 auto;
+  font-family: var(--ff-primary);
+  font-size: 1.25rem;
+}
+
+.form-payment .payment-btn:hover {
+  border-color: var(--clr-dark);
+  color: var(--clr-white);
+  background-color: var(--clr-dark);
+}

@@ -1,0 +1,30 @@
+/*
+=============== 
+Main
+===============
+*/
+
+.main {
+  padding: 2rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./../../../public/images/banner.jpg) center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.main .info-titles {
+  text-align: center;
+}
+
+.main .info-titles h2 {
+  font-size: 1.75rem;
+  color: var(--clr-primary);
+}
+
+.main .info-titles h3 {
+  font-size: 2rem;
+  color: var(--clr-white);
+}

@@ -1,0 +1,69 @@
+/*
+=============== 
+Registration
+===============
+*/
+
+.registration .title {
+  color: var(--clr-dark);
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+
+.registration .form {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.registration .form .form-input input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid rgba(255, 137, 6, 0.5);
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-family: var(--ff-primary);
+  transition: var(--transition);
+  font-size: 1.2rem;
+  color: var(--clr-primary);
+  padding: 1rem;
+}
+
+.registration .form .form-input input:focus {
+  outline: none;
+  border-bottom-color: rgba(255, 137, 6, 1);
+  padding-right: 0.5rem;
+}
+
+.registration .form .form-input input::placeholder {
+  transition: var(--transition);
+  color: var(--clr-primary);
+}
+
+.registration .form .form-input input:focus::placeholder {
+  padding-right: 0.5rem;
+}
+
+.registration .form .submit-btn {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin: 0 auto;
+  background-color: unset;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  margin-top: 2rem;
+  transition: var(--transition);
+}
+
+.registration .form .submit-btn:hover {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  border-color: var(--clr-dark);
+}

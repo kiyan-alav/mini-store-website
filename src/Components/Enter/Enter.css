@@ -1,0 +1,51 @@
+/*
+=============== 
+Enter Section
+===============
+*/
+
+.enter-section {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+}
+
+.enter-section .enter-left button {
+  background-color: var(--clr-primary);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.75rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-white);
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.enter-section .enter-left button:hover {
+  background-color: var(--clr-dark);
+}
+
+.enter-section .enter-right {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .enter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .enter-section .enter-right p {
+    max-width: 45rem;
+  }
+}
+
+.enter-section .enter-right h2 {
+  font-size: 1.5rem;
+  color: var(--clr-dark);
+}
